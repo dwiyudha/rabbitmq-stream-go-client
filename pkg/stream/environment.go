@@ -11,7 +11,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/logs"
+	"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/logs"
 )
 
 type locator struct {

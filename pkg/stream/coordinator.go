@@ -7,7 +7,7 @@ import (
 	"time"
 
 	"github.com/pkg/errors"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
+	"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/amqp"
 )
 
 type Coordinator struct {

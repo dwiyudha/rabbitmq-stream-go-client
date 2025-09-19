@@ -8,10 +8,10 @@ import (
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/logs"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/message"
-	test_helper "github.com/rabbitmq/rabbitmq-stream-go-client/pkg/test-helper"
+	"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/amqp"
+	"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/logs"
+	"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/message"
+	test_helper "github.com/dwiyudha/rabbitmq-stream-go-client/pkg/test-helper"
 )
 
 type TestingRandomStrategy struct {
@@ -518,7 +518,7 @@ var _ = Describe("Super Stream Producer", Label("super-stream-producer"), func()
 		go func() {
 			client, ok := env.producers.getCoordinators()["localhost:5552"].clientsPerContext.Load(1)
 			Expect(ok).To(BeTrue())
-			// https://github.com/rabbitmq/rabbitmq-stream-go-client/issues/406
+			// https://github.com/dwiyudha/rabbitmq-stream-go-client/issues/406
 			// we use internal mutex, we can safely call maybeCleanProducers
 			env.producers.mutex.Lock()
 			client.(*Client).maybeCleanProducers(partitionToClose)

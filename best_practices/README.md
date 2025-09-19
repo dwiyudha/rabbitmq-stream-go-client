@@ -105,4 +105,4 @@ env, err := stream.NewEnvironment(stream.NewEnvironmentOptions().
 )
 ```
 
-See these issues [Issue #293](https://github.com/rabbitmq/rabbitmq-stream-go-client/issues/293) and [PR #374](https://github.com/rabbitmq/rabbitmq-stream-go-client/pull/374), to get more insight.
+See these issues [Issue #293](https://github.com/dwiyudha/rabbitmq-stream-go-client/issues/293) and [PR #374](https://github.com/dwiyudha/rabbitmq-stream-go-client/pull/374), to get more insight.

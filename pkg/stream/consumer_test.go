@@ -11,8 +11,8 @@ import (
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 	"github.com/pkg/errors"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/message"
+	"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/amqp"
+	"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/message"
 )
 
 var _ = Describe("Streaming Consumers", func() {
@@ -643,7 +643,7 @@ var _ = Describe("Streaming Consumers", func() {
 	})
 
 	It("Should not skip chunks on slow consumer", func() {
-		// see: https://github.com/rabbitmq/rabbitmq-stream-go-client/pull/412
+		// see: https://github.com/dwiyudha/rabbitmq-stream-go-client/pull/412
 		const credits = 2
 		const numMessages = 10_000
 		producer, err := env.NewProducer(streamName, nil)

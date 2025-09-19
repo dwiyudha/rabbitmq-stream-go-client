@@ -7,8 +7,8 @@ import (
 
 	"slices"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/logs"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/message"
+	"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/logs"
+	"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/message"
 	"github.com/spaolacci/murmur3"
 )
 

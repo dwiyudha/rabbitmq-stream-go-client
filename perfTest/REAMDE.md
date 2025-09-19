@@ -8,17 +8,17 @@ To install you can download the version from GitHub:
 
 Mac:
 ```
-https://github.com/rabbitmq/rabbitmq-stream-go-client/releases/latest/download/stream-perf-test_darwin_amd64.tar.gz
+https://github.com/dwiyudha/rabbitmq-stream-go-client/releases/latest/download/stream-perf-test_darwin_amd64.tar.gz
 ```
 
 Linux:
 ```
-https://github.com/rabbitmq/rabbitmq-stream-go-client/releases/latest/download/stream-perf-test_linux_amd64.tar.gz
+https://github.com/dwiyudha/rabbitmq-stream-go-client/releases/latest/download/stream-perf-test_linux_amd64.tar.gz
 ```
 
 Windows
 ```
-https://github.com/rabbitmq/rabbitmq-stream-go-client/releases/latest/download/stream-perf-test_windows_amd64.zip
+https://github.com/dwiyudha/rabbitmq-stream-go-client/releases/latest/download/stream-perf-test_windows_amd64.zip
 ```
 
 execute `stream-perf-test --help` to see the parameters. By default it executes a test with one producer, one consumer in `BatchSend` mode.

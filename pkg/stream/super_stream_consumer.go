@@ -7,8 +7,8 @@ import (
 
 	"slices"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/logs"
+	"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/amqp"
+	"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/logs"
 )
 
 type SuperStreamConsumerOptions struct {

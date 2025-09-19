@@ -9,9 +9,9 @@ import (
 
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/message"
-	test_helper "github.com/rabbitmq/rabbitmq-stream-go-client/pkg/test-helper"
+	"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/amqp"
+	"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/message"
+	test_helper "github.com/dwiyudha/rabbitmq-stream-go-client/pkg/test-helper"
 )
 
 var _ = Describe("Super Stream Consumer", Label("super-stream-consumer"), func() {

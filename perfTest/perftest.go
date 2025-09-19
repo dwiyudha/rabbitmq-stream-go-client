@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/rabbitmq/rabbitmq-stream-go-client/perfTest/cmd"
+	"github.com/dwiyudha/rabbitmq-stream-go-client/perfTest/cmd"
 )
 
 func main() {

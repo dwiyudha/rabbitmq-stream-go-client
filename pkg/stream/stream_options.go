@@ -9,6 +9,7 @@ type StreamOptions struct {
 	MaxAge              time.Duration
 	MaxLengthBytes      *ByteCapacity
 	MaxSegmentSizeBytes *ByteCapacity
+	QueueLeaderLocator  string `default:"client-local"`
 }
 
 func (s *StreamOptions) SetMaxAge(maxAge time.Duration) *StreamOptions {
@@ -26,8 +27,13 @@ func (s *StreamOptions) SetMaxSegmentSizeBytes(segmentSize *ByteCapacity) *Strea
 	return s
 }
 
+func (s *StreamOptions) SetQueueLeaderLocator(queueLeaderLocator string) *StreamOptions {
+	s.QueueLeaderLocator = queueLeaderLocator
+	return s
+}
+
 func (s StreamOptions) buildParameters() (map[string]string, error) {
-	res := map[string]string{"queue-leader-locator": "least-leaders"}
+	res := make(map[string]string)
 
 	if s.MaxLengthBytes != nil {
 		if s.MaxLengthBytes.error != nil {
@@ -52,6 +58,11 @@ func (s StreamOptions) buildParameters() (map[string]string, error) {
 	if s.MaxAge > 0 {
 		res["max-age"] = fmt.Sprintf("%.0fs", s.MaxAge.Seconds())
 	}
+
+	if len(s.QueueLeaderLocator) > 0 {
+		res["queue-leader-locator"] = s.QueueLeaderLocator
+	}
+
 	return res, nil
 }
 

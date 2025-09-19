@@ -9,8 +9,8 @@ import (
 	"github.com/google/uuid"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/message"
+	"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/amqp"
+	"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/message"
 )
 
 var _ = Describe("Streaming Producers", func() {
@@ -279,7 +279,7 @@ var _ = Describe("Streaming Producers", func() {
 	})
 
 	It("Wait for inflight messages", func() {
-		// https://github.com/rabbitmq/rabbitmq-stream-go-client/issues/103
+		// https://github.com/dwiyudha/rabbitmq-stream-go-client/issues/103
 
 		producer, err := testEnvironment.NewProducer(testProducerStream, nil)
 		Expect(err).NotTo(HaveOccurred())

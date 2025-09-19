@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"
+	"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/amqp"
 
 	"github.com/google/uuid"
 	. "github.com/onsi/ginkgo/v2"
@@ -346,7 +346,7 @@ var _ = Describe("Environment test", func() {
 	It("Multi Uris/Multi with some not reachable end-points ", func() {
 		// To connect the client is enough to have one valid endpoint
 		// even the other endpoints are not reachable
-		// https://github.com/rabbitmq/rabbitmq-stream-go-client/issues/309
+		// https://github.com/dwiyudha/rabbitmq-stream-go-client/issues/309
 
 		env, err := NewEnvironment(NewEnvironmentOptions().
 			SetUris([]string{
@@ -490,7 +490,7 @@ var _ = Describe("Environment test", func() {
 		Expect(env.Close()).NotTo(HaveOccurred())
 	})
 
-	// PR:https://github.com/rabbitmq/rabbitmq-stream-go-client/pull/388
+	// PR:https://github.com/dwiyudha/rabbitmq-stream-go-client/pull/388
 	Describe("QueryOffset DeclareStream StoreOffset should reconnect the locator", func() {
 		env, err := NewEnvironment(NewEnvironmentOptions())
 		Expect(err).NotTo(HaveOccurred())

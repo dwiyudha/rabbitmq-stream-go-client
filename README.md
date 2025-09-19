@@ -3,10 +3,10 @@
 ---
 [![Go Report Card][ReportCard-Image]][ReportCard-Url] [![Build Status][Build-Status-Image]][Build-Status-Url] 
 
-[ReportCard-Url]: https://goreportcard.com/report/github.com/rabbitmq/rabbitmq-stream-go-client
-[ReportCard-Image]: https://goreportcard.com/badge/github.com/rabbitmq/rabbitmq-stream-go-client
-[Build-Status-Url]: https://github.com/rabbitmq/rabbitmq-stream-go-client/actions
-[Build-Status-Image]: https://github.com/rabbitmq/rabbitmq-stream-go-client/actions/workflows/build_and_test.yml/badge.svg?branch=main
+[ReportCard-Url]: https://goreportcard.com/report/github.com/dwiyudha/rabbitmq-stream-go-client
+[ReportCard-Image]: https://goreportcard.com/badge/github.com/dwiyudha/rabbitmq-stream-go-client
+[Build-Status-Url]: https://github.com/dwiyudha/rabbitmq-stream-go-client/actions
+[Build-Status-Image]: https://github.com/dwiyudha/rabbitmq-stream-go-client/actions/workflows/build_and_test.yml/badge.svg?branch=main
 
 Go client for [RabbitMQ Stream Queues](https://github.com/rabbitmq/rabbitmq-server/tree/master/deps/rabbitmq_stream)
 
@@ -63,15 +63,15 @@ See also the [Reliable Producer and Reliable Consumer](#reliable-producer-and-re
 ### Installing
 
 ```shell
- go get -u github.com/rabbitmq/rabbitmq-stream-go-client
+ go get -u github.com/dwiyudha/rabbitmq-stream-go-client
 ```
 
 imports:
 
 ```golang
-"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/stream"  // Main package
-"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/amqp"    // amqp 1.0 package to encode messages
-"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/message" // messages interface package, you may not need to import it directly
+"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/stream"  // Main package
+"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/amqp"    // amqp 1.0 package to encode messages
+"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/message" // messages interface package, you may not need to import it directly
 ```
 
 ### Run server with Docker

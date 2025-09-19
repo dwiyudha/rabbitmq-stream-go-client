@@ -16,7 +16,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/rabbitmq/rabbitmq-stream-go-client/pkg/logs"
+	"github.com/dwiyudha/rabbitmq-stream-go-client/pkg/logs"
 )
 
 // SaslConfiguration see
@@ -694,7 +694,7 @@ func (c *Client) BrokerLeader(stream string) (*Broker, error) {
 	streamMetadata.Leader.advHost = streamMetadata.Leader.Host
 
 	res := net.Resolver{}
-	// see: https://github.com/rabbitmq/rabbitmq-stream-go-client/pull/317
+	// see: https://github.com/dwiyudha/rabbitmq-stream-go-client/pull/317
 	ctx, cancel := context.WithTimeout(context.Background(), 30*time.Second)
 	defer cancel()
 	_, err := res.LookupIPAddr(ctx, streamMetadata.Leader.Host)
